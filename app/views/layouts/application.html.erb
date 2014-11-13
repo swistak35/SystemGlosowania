@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% if user_signed_in? %>
+    Hello, <%= current_user.email %>!
+  <% else %>
+    <%= link_to "Log in", new_user_session_path %> | 
+    <%= link_to "Sign up", new_user_registration_path %>
+  <% end %>
+  <br />
 
   <img src="<%= asset_path 'logo.jpeg' %>" />
 
