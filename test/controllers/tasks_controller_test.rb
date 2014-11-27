@@ -1,8 +1,12 @@
 require 'test_helper'
 
 class TasksControllerTest < ActionController::TestCase
+  include Devise::TestHelpers
+
   setup do
     @task = tasks(:one)
+    @request.env["devise.mapping"] = Devise.mappings[:admin]
+    sign_in FactoryGirl.create(:admin)
   end
 
   test "should get index" do
