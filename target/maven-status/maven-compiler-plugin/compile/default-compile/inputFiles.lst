@@ -1,0 +1,10 @@
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\common\App.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\common\StockDailyRecord.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\dao\StockDaoImpl.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\common\Stock.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\common\StockDetail.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\config\AppConfig.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\common\Category.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\dao\StockDao.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\repositories\StockRepository.java
+D:\Development\eclipse\HibernateExample\src\main\java\com\mkyong\persistence\HibernateUtil.java

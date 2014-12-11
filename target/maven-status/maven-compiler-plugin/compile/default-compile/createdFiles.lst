@@ -1,0 +1,10 @@
+com\mkyong\config\AppConfig.class
+com\mkyong\repositories\StockRepository.class
+com\mkyong\persistence\HibernateUtil.class
+com\mkyong\common\Stock.class
+com\mkyong\dao\StockDaoImpl.class
+com\mkyong\common\App.class
+com\mkyong\common\StockDetail.class
+com\mkyong\dao\StockDao.class
+com\mkyong\common\Category.class
+com\mkyong\common\StockDailyRecord.class

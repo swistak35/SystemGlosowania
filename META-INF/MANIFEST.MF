@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HibernateExample
+Bundle-SymbolicName: HibernateExample
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.mkyong.common,
+ com.mkyong.config,
+ com.mkyong.dao,
+ com.mkyong.persistence,
+ com.mkyong.repositories
