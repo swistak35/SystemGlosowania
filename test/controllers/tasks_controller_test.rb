@@ -6,7 +6,8 @@ class TasksControllerTest < ActionController::TestCase
   setup do
     @task = tasks(:one)
     @request.env["devise.mapping"] = Devise.mappings[:admin]
-    sign_in FactoryGirl.create(:admin)
+    user = User.create(email: "user@example.com")
+    sign_in user
   end
 
   test "should get index" do
