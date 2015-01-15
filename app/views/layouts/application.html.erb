@@ -17,6 +17,10 @@
 
   <img src="<%= asset_path 'logo.jpeg' %>" />
 
+  <p>
+    <%= flash[:notice] %>
+  </p>
+
 <%= yield %>
 
 </body>

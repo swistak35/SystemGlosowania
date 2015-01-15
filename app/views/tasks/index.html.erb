@@ -12,12 +12,16 @@
   <tbody>
     <% @tasks.each do |task| %>
       <tr>
-        <td><%= task.done ? 'X' : '' %></td>
+        <td><%= task.done? ? 'X' : '' %></td>
         <td><%= task.name %></td>
         <td><%= task.deadline %></td>
         <td><%= link_to 'Show', task %></td>
         <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Mark as done', mark_task_path(task), method: :post %></td>
+        <% if task.done? %>
+          <td><%= link_to 'Unmark', unmark_task_path(task), method: :post %></td>
+        <% else %>
+          <td><%= link_to 'Mark as done', mark_task_path(task), method: :post %></td>
+        <% end %>
         <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

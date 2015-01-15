@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  before_action :set_task, only: [:show, :edit, :update, :destroy, :mark]
+  before_action :set_task, only: [:show, :edit, :update, :destroy, :mark, :unmark]
   before_action :authenticate_user!
 
   # GET /tasks
@@ -64,7 +64,12 @@ class TasksController < ApplicationController
 
   def mark
     @task.mark_as_done!
-    redirect_to tasks_path
+    redirect_to tasks_path, notice: "Marked as done!"
+  end
+
+  def unmark
+    @task.unmark!
+    redirect_to tasks_path, notice: "Unmarked!"
   end
 
   private
