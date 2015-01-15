@@ -16,6 +16,8 @@ gem 'therubyracer',  platforms: :ruby
 
 gem 'devise'
 gem 'factory_girl'
+gem 'capybara'
+gem 'launchy'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
