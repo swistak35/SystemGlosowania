@@ -1,12 +1,9 @@
 require 'test_helper'
 
 class TasksControllerTest < ActionController::TestCase
-  include Devise::TestHelpers
-
   setup do
     @task = tasks(:one)
-    @request.env["devise.mapping"] = Devise.mappings[:admin]
-    user = User.create(email: "user@example.com")
+    user = User.create(email: "user@example.com", password: "foobarbaz")
     sign_in user
   end
 

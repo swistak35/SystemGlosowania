@@ -1,13 +1,12 @@
 require 'test_helper'
 
 class TaskTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
   test "marking as published" do
     t = Task.create
-    assert t.done, false
+    assert_equal t.done, false
     t.mark_as_done!
-    assert t.done, true
+    assert_equal t.done, true
+    t.unmark!
+    assert_equal t.done, false
   end
 end
